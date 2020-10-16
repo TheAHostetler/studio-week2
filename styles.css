@@ -1,9 +1,16 @@
+h1 {
+  margin: 0 auto;
+  color: blue;
+  text-align: center;
+}
+
 ul {
  list-style-type: none;
- margin: 1px;
+ margin: 0 auto;
  padding: 1px;
  overflow: hidden;
  background-color: white;
+ text-align: center;
 }
 
 li {
@@ -31,4 +38,5 @@ li a:hover {
 
 .active {
  background-color: #a09f9f;
+ border-color: #757575
 }

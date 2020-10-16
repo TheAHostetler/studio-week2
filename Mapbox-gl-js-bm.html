@@ -9,17 +9,39 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Add styling info for the map -->
     <style>
-         #mapId {
-      height: 400px;
-      width: 800px;
-    }
+      #mapId {
+        height: 600px;
+        width: 90%;
+        margin: auto;
+        border-style: solid;
+        border-color: #c8c8c8;
+        border-width: medium;
+        padding-bottom: 0px;
+      }
+      #content {
+        background-color: #202020;
+        width: 90%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: auto;
+        border-style: solid;
+        border-color: #c8c8c8;
+        color: white;
+        text-align: center;
+      }
+      #subtitle {
+        text-align: center;
+      }
     </style>
     <!-- Adding styling info for page layout by reading in a CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1>Studio Week 2 <br> Custom Style with Mapbox GL JS </h1>
+  <h1>Studio Week 2</h1>
+  <br>
   <!-- Add multiple pages to web page-->
   <!-- active class displays the grey box around current page-->
   <ul>
@@ -29,24 +51,43 @@
     <li><a class="active" href="Mapbox-gl-js-bm.html" target="_self">Output 4</a></li>
   </ul>
   <br>
-
+  <div>
+    <div id ="subtitle">
+      <h1>Custom Style with Mapbox GL JS</h1>
+      <p><b>This map style was developed using the <a href=https://static1.squarespace.com/static/586eb0d0e4fcb54364411723/t/58925658ff7c505815eeac60/1485985392905/hrw_styleguide.pdf/>Human Rights Watch Style Guide</a>.</b></p>
+      <p><i>Scroll down below the map to learn more about <a href=https://www.hrw.org/>Human Rights Watch<a></i></b>
+      <br>
+    </div>
     <!-- Container for the map -->
     <div id="mapId"></div>
+    <div id="content">
+      <h2>Who We Are</h2>
+      <p>Human Rights Watch investigates and reports on abuses happening in all corners of the world. We are roughly 450 people of 70-plus nationalities who are
+      country experts, lawyers, journalists, and others who work to protect the most at risk, from vulnerable minorities and civilians in wartime, to refugees
+      and children in need. We direct our advocacy towards governments, armed groups and businesses, pushing them to change or enforce their laws, policies and
+      practices. To ensure our independence, we refuse government funding and carefully review all donations to ensure that they are consistent with our policies,
+      mission, and values. We partner with organizations large and small across the globe to protect embattled activists and to help hold abusers to account and
+      bring justice to victims.</p>
 
+      <h2>What We Do</h2>
+      <p><b>Investigate:</b> Our researchers work in the field in 100 some countries, uncovering facts that create an undeniable record of human rights abuses.</p>
+      <p><b>Expose:</b> We tell the stories of what we found, sharing them with millions of social media and online followers each day. News media often report on our investigations, furthering our reach.</p>
+      <p><b>Change:</b> We meet with governments, the United Nations, rebel groups, corporations, and others to see that policy is changed, laws are enforced, and justice is served.</p>
+    </div>
     <script>
     // Set your Mapbox access token
-    mapboxgl.accessToken = "";
+    mapboxgl.accessToken = "pk.eyJ1IjoiYW1hcHBlciIsImEiOiJnZ0FDZWJrIn0.9Vck8ZXqJsSYGAYhKwLsWA";
 
     /* The map variable stores a new mapbox gl map.
-    * map's center set to [-122.467, 37.798] with zoom 13. 
+    * map's center set to [-122.467, 37.798] with zoom 13.
     * Set the style URL to your custom style
     * Update the style with your custom style's Style URL.
     * See the Style URL'S reference for more info: https://docs.mapbox.com/help/glossary/style-url/
     */
     var map = new mapboxgl.Map({
-    center: [-122.467, 37.798],
-    zoom: 13,
-    style: "",
+    center: [153.270352, 30.037318],
+    zoom: 1,
+    style: "mapbox://styles/amapper/ckgb36mec3ydv19mpmxipx05k",
     container: "mapId"
     });
 

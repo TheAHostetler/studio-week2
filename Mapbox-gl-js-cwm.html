@@ -4,19 +4,31 @@
 <head>
   <title>Studio Week 2</title>
     <!-- Add Mapbox GL JS JavaScript file -->
-
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <!-- Add in the Mapbox GL JS CSS file -->
+    <style>
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Add styling info for the map -->
-    <style>
-        
+
+      body {
+          margin: 0;
+          padding: 0;
+      }
+      #mapId {
+          width: 90%;
+          height: 600px;
+          background-color: blue;
+          margin: auto;
+      }
     </style>
     <!-- Adding styling info for page layout by reading in a CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1>Studio Week 2 <br> Vector tiles with Mapbox GL JS </h1>
+  <h1>Studio Week 2 </h1>
+  <br>
   <!-- Add multiple pages to web page-->
   <!-- active class displays the grey box around current page-->
   <ul>
@@ -27,17 +39,30 @@
   </ul>
   <br>
 
+  <h1> Vector tiles with Mapbox GL JS </h1>
+  <br>
+
     <!-- Container for the map -->
+    <div id="mapId"></div>
 
     <script>
+
         // Mapbox GL JS requires a token
-        
+        mapboxgl.accessToken = "pk.eyJ1IjoiYW1hcHBlciIsImEiOiJnZ0FDZWJrIn0.9Vck8ZXqJsSYGAYhKwLsWA";
+
         /* Initialize the map with:
          *  container
          *  style
          *  center
          *  zoom
          */
+         var map = new mapboxgl.Map({
+           container: "mapId",
+           style: "mapbox://styles/mapbox/streets-v11",
+           center: [-122.420790, 37.754700],
+           zoom: 13
+         });
+
     </script>
 
 </body>

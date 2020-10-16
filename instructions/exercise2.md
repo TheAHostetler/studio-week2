@@ -46,20 +46,20 @@
 <script>
 // Mapbox GL JS requires a token
 mapboxgl.accessToken = 'your token goes here’;
-      
+
 // Initialize the map
 var map = new mapboxgl.Map({
-container: 'mapId', 
-style: 'mapbox://styles/mapbox/streets-v11', 
-center: [-122.420790, 37.754700], 
-zoom: 14 
+container: 'mapId',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [-122.420790, 37.754700],
+zoom: 14
 });
 </script>
 ```
 
 ##### 8. Save your changes and load your page
 
-### What’s different about Mapbox GL JS vs Leaflet?
+### What’s different about Mapbox GL JS vs Leaflet? -
 ![image](images/slide80.png)
 
 ## Additional Resources
