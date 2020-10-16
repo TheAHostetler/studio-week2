@@ -14,12 +14,6 @@
 
   <!-- Set the map's width: 800px and height: 600px in a `style` tag -->
   <style type="text/css">
-    #mapId {
-      width: 90%;
-      height: 600px;
-      background-color: green;
-      margin: auto
-    }
 
   </style>
 
@@ -28,7 +22,9 @@
 </head>
 
 <body>
-  <h1 id="title">Studio Week 2</h1>
+  <h1 id="title">STUDIO WEEK 2</h1>
+  <br>  
+  <a style="font-size:20px" href=theahostetler.github.io> Check out my other work</a>
   <br>
   <!-- Add multiple pages to web page-->
   <!-- active class displays the grey box around current page-->
@@ -40,7 +36,10 @@
   </ul>
   <br>
 
-  <h1>  Marker and Popup with Mapbox GL JS map  </h1>
+  <div id ="subtitle">
+    <h1>  Marker and Popup with Mapbox GL JS map  </h1>
+  </div>
+
   <br>
 
   <!-- Create a div to house the map -->
@@ -62,6 +61,8 @@
       center: [-122.467, 37.798],
       zoom: 13
     });
+
+    map.addControl(new mapboxgl.NavigationControl());
 
 
     /* Create a variable called "popup" to store a new Popup instance (ref: https://docs.mapbox.com/mapbox-gl-js/api/#popup).
@@ -85,6 +86,9 @@
 
 
   </script>
+  <br>
+  <p style="font-size:10px;"> <i> Background image from <a href=https://hitinfrastructure.com/images/site/features/Network_conntectivity.jpg>hitinfrastructure.com</a></i></p>
+  <br>
 </body>
 
 </html>

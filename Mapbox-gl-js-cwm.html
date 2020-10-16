@@ -15,19 +15,15 @@
           margin: 0;
           padding: 0;
       }
-      #mapId {
-          width: 90%;
-          height: 600px;
-          background-color: blue;
-          margin: auto;
-      }
     </style>
     <!-- Adding styling info for page layout by reading in a CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1 id="title">Studio Week 2 </h1>
+  <h1 id="title">STUDIO WEEK 2 </h1>
+  <br>
+  <a style="font-size:20px" href=theahostetler.github.io> Check out my other work</a>
   <br>
   <!-- Add multiple pages to web page-->
   <!-- active class displays the grey box around current page-->
@@ -39,7 +35,10 @@
   </ul>
   <br>
 
-  <h1> Vector tiles with Mapbox GL JS </h1>
+  <div id ="subtitle">
+    <h1> Vector tiles with Mapbox GL JS </h1>
+  </div>
+
   <br>
 
     <!-- Container for the map -->
@@ -63,8 +62,17 @@
            zoom: 13
          });
 
-    </script>
+         /* map.addControl(new mapboxgl.NavigationControl());
 
+            controls do not show up properly???
+
+         */
+
+
+    </script>
+    <br>
+    <p style="font-size:10px;"> <i> Background image from <a href=https://hitinfrastructure.com/images/site/features/Network_conntectivity.jpg>hitinfrastructure.com</a></i></p>
+    <br>
 </body>
 
 </html>

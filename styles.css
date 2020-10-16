@@ -1,16 +1,50 @@
 body{
   background-image: url('background-network.png');
   color: white;
+  text-align: center;
+}
+
+#mapId{
+  height: 600px;
+  width: 90%;
+  margin: auto;
+  border-style: solid;
+  border-color: #c8c8c8;
+  border-width: medium;
+  padding-bottom: 0px;
+}
+
+a{
+  color: #f6691c;
+}
+
+a.attention{
+    font-size: 30px;
 }
 
 h1 {
   margin: 0 auto;
-  color: blue;
+  /*color: blue;*/
   text-align: center;
+  font-family: Arial;
 }
 
+p {
+  font-family: Arial;
+}
 #title {
   font-size: 50px;
+  color: #f6691c;
+  font-family: Arial;
+}
+
+#subtitle {
+  width:90%;
+  background-color: #202020;
+  margin: auto;
+  border: solid;
+  border-color: #c8c8c8;
+  font-family: Arial;
 }
 
 ul {
@@ -21,13 +55,12 @@ ul {
  /*background-color: white;*/
  text-align: center;
  float: center;
- color: #000;
+ font-family: Arial;
 }
 
 li {
  float: left;
  border: 2px solid white;
- color: #000;
 }
 
 /* Add a border to all( but not the last) list items */
@@ -37,10 +70,10 @@ li:last-child {
 
 li a {
  display: block;
- color: black;
- text-align: left;
+ color: white;
  padding: 15px 17px;
  text-decoration: none;
+ background-color: #202020;
 }
 
 /* Links will change color when hovered over */

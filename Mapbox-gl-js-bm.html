@@ -2,22 +2,13 @@
 <html>
 
 <head>
-  <title>Studio Week 2</title>
+  <title>STUDIO WEEk 2</title>
     <!-- Add Mapbox GL JS JavaScript file -->
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <!-- Add in the Mapbox GL JS CSS file -->
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Add styling info for the map -->
     <style>
-      #mapId {
-        height: 600px;
-        width: 90%;
-        margin: auto;
-        border-style: solid;
-        border-color: #c8c8c8;
-        border-width: medium;
-        padding-bottom: 0px;
-      }
       #content {
         background-color: #202020;
         width: 90%;
@@ -34,13 +25,16 @@
       #subtitle {
         text-align: center;
       }
+
     </style>
     <!-- Adding styling info for page layout by reading in a CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1 id="title">Studio Week 2</h1>
+  <h1 id="title">STUDIO WEEK 2</h1>
+  <br>  
+  <a style="font-size:20px" href=theahostetler.github.io> Check out my other work</a>
   <br>
   <!-- Add multiple pages to web page-->
   <!-- active class displays the grey box around current page-->
@@ -55,12 +49,18 @@
     <div id ="subtitle">
       <h1>Custom Style with Mapbox GL JS</h1>
       <p><b>This map style was developed using the <a href=https://static1.squarespace.com/static/586eb0d0e4fcb54364411723/t/58925658ff7c505815eeac60/1485985392905/hrw_styleguide.pdf/>Human Rights Watch Style Guide</a>.</b></p>
-      <p><i>Scroll down below the map to learn more about <a href=https://www.hrw.org/>Human Rights Watch<a></i></b>
+      <p><i>Scroll down below the map to learn more about <a href=https://www.hrw.org/>Human Rights Watch</a></i></b>
       <br>
     </div>
+    <br>
+
     <!-- Container for the map -->
     <div id="mapId"></div>
+    <br>
+
     <div id="content">
+      <br>
+      <a class=attention href=https://www.hrw.org/>Visit the Human Rights Watch website to learn more</a>
       <h2>Who We Are</h2>
       <p>Human Rights Watch investigates and reports on abuses happening in all corners of the world. We are roughly 450 people of 70-plus nationalities who are
       country experts, lawyers, journalists, and others who work to protect the most at risk, from vulnerable minorities and civilians in wartime, to refugees
@@ -91,9 +91,12 @@
     container: "mapId"
     });
 
+    map.addControl(new mapboxgl.NavigationControl());
+
     </script>
 
-<p> <i> Background image from <a href=https://hitinfrastructure.com/images/site/features/Network_conntectivity.jpg>hitinfrastructure.com</a></i></p>
-</body>
+    <br>
+    <p style="font-size:10px;"> <i> Background image from <a href=https://hitinfrastructure.com/images/site/features/Network_conntectivity.jpg>hitinfrastructure.com</a></i></p>
+    <br></body>
 
 </html>
