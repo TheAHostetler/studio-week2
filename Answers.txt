@@ -1,0 +1,3 @@
+From excercise 2:
+  map 1 (openstreetmap) is much more detailed in its descriptions of individual places. It uses a wider variety of icons.
+  map 2 (mapbox) does look much smoother, clean, and crisp in its graphics. It does seem to load more slowly.
